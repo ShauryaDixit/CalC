@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <style>
+        body{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 650px;
+            background-color: rgb(61, 129, 156);
+        }
+        .container{
+            height: 520px;
+            width: 400px;
+            border-radius: 10px;
+            display: flex ;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            background-color: rgba(255, 255, 255, 0.788);
+        }
+        .display{
+            height: 120px;
+            width: 360px;
+            border: 2px solid black;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            background-color: rgb(60, 114, 114);
+            color: rgba(0, 0, 0, 0.863);
+        }
+        .buttons{
+            display: grid;
+            grid-template-columns: auto auto auto auto auto;
+            grid-gap: 10px;
+        }
+        .narrow{
+            height: 10px;
+        }
+        .btn{
+            text-align: center;
+            border-radius: 7px;
+            font-size: 17px;
+            font-weight: bold;
+            font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 22px;
+            background-color: skyblue;
+            /* margin: 10px; */
+        }
+        .dark{
+            background-color: rgb(21, 50, 104);
+            color: rgb(94, 188, 224);
+        }
+        #enter{
+            background-color: rgb(73, 73, 191);
+            grid-column: 6/4;
+            grid-row: 5;
+            color: skyblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="display">
+        </div>
+        <div class="buttons">
+          <div id="fun1" class="btn narrow dark">(</div>
+          <div id="fun2" class="btn narrow dark">)</div>
+          <div id="fun3" class="btn narrow dark">ans</div>
+          <div id="fun4" class="btn narrow dark">del</div>
+          <div id="fun5" class="btn narrow dark">clear</div>
+          <div id="num7" class="btn num">7</div>
+          <div id="num8" class="btn num">8</div>
+          <div id="num9" class="btn num">9</div>
+          <div id="op1" class="btn dark">%</div>
+          <div id="op2" class="btn dark">&#8730;</div>
+          <div id="num4" class="btn num">4</div>
+          <div id="num5" class="btn num">5</div>
+          <div id="num6" class="btn num">6</div>
+          <div id="op3" class="btn dark">x</div>
+          <div id="op4" class="btn dark">&divide;</div>
+          <div id="num1" class="btn num">1</div>
+          <div id="num2" class="btn num">2</div>
+          <div id="num3" class="btn num">3</div>
+          <div id="op5" class="btn dark">+</div>
+          <div id="op6" class="btn dark">-</div>
+          <div id="fun6" class="btn dark">.</div>
+          <div id="num0" class="btn num">0</div>
+          <div id="fun7" class="btn dark">&#177;</div>
+          <div id="enter" class="btn enter">ENTER</div>
+        </div>
+        
+    </div>
+</body>
+</html>
